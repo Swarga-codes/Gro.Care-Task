@@ -1,0 +1,12 @@
+.card_detail{
+    margin-left: 1rem;
+    background: transparent;
+}
+.creator_details{
+    font-size: 14px;
+    color: gray;
+}
+.video_title{
+    color: white;
+    font-weight: 600;
+}

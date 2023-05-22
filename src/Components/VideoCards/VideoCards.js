@@ -6,12 +6,12 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import CardHeader from '@mui/material/CardHeader';
 import Avatar from '@mui/material/Avatar';
-import IconButton from '@mui/material/IconButton';
+import VideoCardStyles from './VideoCard.module.css'
 
 
 export default function ActionAreaCard({post}) {
   return (
-    <Card sx={{ maxWidth: 345, margin: '0.5rem 0.5rem' }}>
+    <Card sx={{ minWidth: 345, margin: '0.5rem 0.5rem' }}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -19,21 +19,22 @@ export default function ActionAreaCard({post}) {
           image={post.submission.thumbnail}
           alt="green iguana"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+
+        <CardContent sx={{display:'flex',background:'#1a1a1a',pl:'0rem',border:'2px solid #1a1a1a'}}>
+        <div className="avatar">
+        <Avatar sx={{ bgcolor: 'red'}} aria-label="recipe" src={post.creator.pic}/>
+    
+         
+            </div>
+            <div className={VideoCardStyles.card_detail}>
+          <Typography gutterBottom variant="h5" component="div" className={VideoCardStyles.video_title}>
             {post.submission.title}
           </Typography>
-          <Avatar sx={{ bgcolor: 'red'}} aria-label="recipe">
-              R
-            </Avatar>
-          <CardHeader
-          title={post.creator.handle}
-          subheader="September 14, 2016"
-        sx={{padding:0}}/>
-          {/*<Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-        </Typography>*/}
+          
+          <Typography variant='p' className={VideoCardStyles.creator_details}>{post.creator.handle}</Typography>
+          <br />
+          <Typography variant='p' className={VideoCardStyles.creator_details}>{post.reaction.count}{" Reactions"}</Typography>
+        </div>
         </CardContent>
       </CardActionArea>
     </Card>
