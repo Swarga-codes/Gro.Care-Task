@@ -1,11 +1,17 @@
 import './App.css';
-import Body from './Components/Body/Body';
 import Navbar from './Components/Navbar/Navbar'
+import {Routes, Route} from 'react-router-dom'
+import Watch from './Components/Watch/Watch';
+import Home from './Components/Home/Home';
 function App() {
   return (
     <div className="App">
+    
 <Navbar/>
-<Body/>
+<Routes>
+<Route exact path='/' element={<Home/>}/>
+<Route exact path="/watch" element={<Watch/>}/>
+</Routes>
     </div>
   );
 }

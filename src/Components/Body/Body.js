@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import VideoCard from '../VideoCards/VideoCards'
 import bodyStyles from './Body.module.css'
+import { Link } from 'react-router-dom';
 function Body() {
     const[postsData,setPostsData]=useState([]);
     const[pageNumber,setPageNumber]=useState(0);
+   
     const fetchData=async()=>{
         const res=await fetch(`https://internship-service.onrender.com/videos?page=${pageNumber}`);
         const data=await res.json();
@@ -18,11 +20,11 @@ function Body() {
     <div className={bodyStyles.videos_display}>
     {
         postsData.map(post=>(
-            <VideoCard post={post}/>
+           <Link to='/watch' state={{data:post}}><VideoCard post={post}/></Link> 
         ))
     }
     </div>
-    <div className="paginate">
+    <div className={bodyStyles.paginate}>  
     <button onClick={()=>{if(pageNumber>0)
         setPageNumber(pageNumber-1)
     }}>Prev</button><button onClick={()=>setPageNumber(pageNumber+1)}>Next</button>

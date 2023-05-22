@@ -4,14 +4,13 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import CardHeader from '@mui/material/CardHeader';
 import Avatar from '@mui/material/Avatar';
 import VideoCardStyles from './VideoCard.module.css'
 
-
 export default function ActionAreaCard({post}) {
+
   return (
-    <Card sx={{ minWidth: 345, margin: '0.5rem 0.5rem' }}>
+    <Card sx={{ minWidth: 345, margin: '0.5rem 0.5rem',borderRadius:0}}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -20,7 +19,7 @@ export default function ActionAreaCard({post}) {
           alt="green iguana"
         />
 
-        <CardContent sx={{display:'flex',background:'#1a1a1a',pl:'0rem',border:'2px solid #1a1a1a'}}>
+        <CardContent sx={{display:'flex',background:'#1a1a1a',pl:'0rem'}}>
         <div className="avatar">
         <Avatar sx={{ bgcolor: 'red'}} aria-label="recipe" src={post.creator.pic}/>
     
@@ -33,6 +32,7 @@ export default function ActionAreaCard({post}) {
           
           <Typography variant='p' className={VideoCardStyles.creator_details}>{post.creator.handle}</Typography>
           <br />
+          
           <Typography variant='p' className={VideoCardStyles.creator_details}>{post.reaction.count}{" Reactions"}</Typography>
         </div>
         </CardContent>
