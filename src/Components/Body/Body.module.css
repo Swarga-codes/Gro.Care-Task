@@ -1,0 +1,10 @@
+.Body{
+    background-color: #1a1a1a;
+    padding: 2rem 2rem;
+}
+.videos_display{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
