@@ -20,7 +20,7 @@ function Body() {
     <div className={bodyStyles.videos_display}>
     {
         postsData.map(post=>(
-           <Link to='/watch' state={{data:post}}><VideoCard post={post}/></Link> 
+           <Link to='/watch' state={{data:post}} style={{textDecoration:'none'}}><VideoCard post={post}/></Link> 
         ))
     }
     </div>

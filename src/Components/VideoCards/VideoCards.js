@@ -19,7 +19,7 @@ export default function ActionAreaCard({post}) {
           alt="green iguana"
         />
 
-        <CardContent sx={{display:'flex',background:'#1a1a1a',pl:'0rem'}}>
+        <CardContent sx={{display:'flex',background:'#1a1a1a'}}>
         <div className="avatar">
         <Avatar sx={{ bgcolor: 'red'}} aria-label="recipe" src={post.creator.pic}/>
     

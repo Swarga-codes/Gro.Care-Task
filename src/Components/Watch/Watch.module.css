@@ -3,3 +3,12 @@
     height: 100vh;
     padding: 4rem 2rem;
 }
+.player_detail{
+    color: white;
+    justify-content: center;
+}
+.data_handle{
+    margin-left:1rem;
+    align-items:center;
+    display:flex;
+}

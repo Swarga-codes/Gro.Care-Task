@@ -1,7 +1,8 @@
 .Body{
     background-color: #1a1a1a;
     padding: 2rem 2rem;
-    height: 100vh;
+    height: fit-content;
+    margin-top: 2rem;
 }
 .videos_display{
     display: flex;
