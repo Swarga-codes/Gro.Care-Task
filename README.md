@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Gro Care Task (Youtube Clone) ▶️
+<h2>The project consists of: </h2>
+<ul>
+  <li>A responsive UI built using React.js and Material UI.</li>
+  <li>The UI is being made in resemblance to actual YouTube App.</li>
+  <li>The homepage loads with the videos at page 0 initially.</li>
+  <li>Users can navigate to different pages incrementally using prev and next buttons at the bottom.</li>
+  <li>Clicking on any video would open up a new route where users can play their video along with relevant details at the bottom.</li>
+ </ul>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Follow the steps to run this web app in your local machine 📃
 
-## Available Scripts
 
-In the project directory, you can run:
+<li>First of all clone the code in this github repo by running the following command in your terminal:</li>
+
+### `git clone https://github.com/Swarga-codes/Gro.Care-Task.git`
+
+
+<li>Go inside the directory where you cloned the app and open any of your preferred IDE such as VSCode, in that directory.</li>
+<li>After opening it open the terminal in your code editor and type the following command: </li>
+
+### `npm install`
+
+<li>This will install all the required dependencies.</li>
+<li>After installing all the dependencies have been completed run the following command: </li>
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<li>This will start the local development server at port 3000, that is at http://localhost:3000/ .</li>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<li>That's how you run the project in your local machine.</li>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Check out the deployed link for the project below 👇
 
-### `npm run build`
+<a href="https://gro-care-task.vercel.app/">YouTube Clone 🚀</a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h2>Thank you! 🙏</h2>
