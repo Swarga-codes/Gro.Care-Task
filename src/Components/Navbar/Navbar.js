@@ -14,7 +14,7 @@ export default function DenseAppBar() {
           <Link to='/' style={{display:'flex',textDecoration:'none',color:'#fff'}}>
           <img src={YoutubeIcon} alt="" width="30px"/>
           <Typography variant="h6" color="inherit" component="div" ml="0.5rem">
-            {" "}YoutubeClone
+            {" "}YouTubeClone
           </Typography>
           </Link>
           
