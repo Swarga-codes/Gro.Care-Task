@@ -8,7 +8,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
 }
 .paginate{
     text-align: center;
@@ -22,4 +21,9 @@
     border: none;
     color: #fff;
     cursor: pointer;
+}
+@media(max-width:991px){
+    .videos_display{
+        justify-content: center;
+    }
 }

@@ -9,7 +9,8 @@ function Body() {
     const fetchData=async()=>{
         const res=await fetch(`https://internship-service.onrender.com/videos?page=${pageNumber}`);
         const data=await res.json();
-        console.log('My data:',data.data.posts)
+        console.log('My data',data.data.posts)
+        console.log('check',data.data.posts.length)
         setPostsData(data.data.posts)
     }
     useEffect(()=>{
@@ -18,16 +19,18 @@ function Body() {
   return (
     <div className={bodyStyles.Body}>
     <div className={bodyStyles.videos_display}>
-    {
+    {postsData?
         postsData.map(post=>(
            <Link to='/watch' state={{data:post}} style={{textDecoration:'none'}}><VideoCard post={post}/></Link> 
         ))
+        :
+       <p>No video Found</p>
     }
     </div>
     <div className={bodyStyles.paginate}>  
     <button onClick={()=>{if(pageNumber>0)
         setPageNumber(pageNumber-1)
-    }}>Prev</button><button onClick={()=>setPageNumber(pageNumber+1)}>Next</button>
+    }}>Previous</button><button onClick={()=>setPageNumber(pageNumber+1)}>Next</button>
     </div>
     </div>
   )
