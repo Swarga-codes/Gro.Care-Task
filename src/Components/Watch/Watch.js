@@ -18,9 +18,11 @@ window.scrollTo(0,0)
     <ReactPlayer url={data.submission.mediaUrl} controls width="100%" height="25rem"/>
     <Box className={WatchStyles.video_details}>
     <Typography fontSize='larger' fontWeight='600' mt='1rem'>{data.submission.title}</Typography>
-    <Box display='flex' mt="1rem">
+    <Box display='flex' mt="1rem" className={WatchStyles.channel_stats}>
+    <Box display={"flex"}>
     <Avatar src={data.creator.pic}/><span className={WatchStyles.data_handle}><b>{data.creator.handle}</b></span>
-    <Box ml='auto' display='flex'>
+    </Box>
+    <Box className={WatchStyles.like_comm}>
     <FaceRetouchingNaturalIcon/>
     <Typography mr='2rem'>&nbsp;{data.reaction.count}<b> Reactions</b></Typography>
     <ModeCommentIcon/>

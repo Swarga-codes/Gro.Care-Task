@@ -12,3 +12,16 @@
     align-items:center;
     display:flex;
 }
+.like_comm{
+    margin-left:auto;
+     display:flex;
+}
+@media(max-width:991px){
+.channel_stats{
+flex-direction: column;
+}
+.like_comm{
+    margin-left: initial;
+    margin-top: 2rem;
+}
+}
